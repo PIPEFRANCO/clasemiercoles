@@ -1,0 +1,29 @@
+/* importancia de tipografia  */
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+/* selector universal  */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Lato', sans-serif; */  
+}
+/* selector por etiqueta */
+span{
+    color: orangered;
+}
+/* selector por id */
+#option_one, #option_three{
+    font-weight: 900;
+    background-color: aquamarine;
+    margin: 20px;
+}
+/* selector por clase  */
+.options_group{
+    background-color: #fff;
+}
+.other_option{
+    font-size: 50px;
+}
+/* selector pot atributo */
+[disabled]{
+    background-color: red;
+}
