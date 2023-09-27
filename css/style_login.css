@@ -8,12 +8,11 @@
     --background:#261e5a;
 }
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
-    font-family: Mulish;
-
+    font-family: 'Mulish';
 }
 h1{
     color: var(--secondary);
@@ -25,20 +24,17 @@ h1{
     width: 100vw;
     display: grid;
     place-items: center;
-    /* background-image: url(); */
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/16/20/49/space-8131437_1280.png);
     background-repeat: no-repeat;
     background-size: auto;
     opacity: 0.5;
-
 }
-
 .centering{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-
 }
 .my_form{
     display: flex;
@@ -48,11 +44,11 @@ h1{
     background-color: var(--background);
     border: 1px solid var(--primary);
     border-radius: 16px;
-    box-shadow: 0 20px 60 px var(--aura);
+    box-shadow: 0 20px 60px var(--aura);
     min-width: 280px;
     max-width: 460px;
     width: 100%;
-    padding: 32px;
+    padding: 30px;
 }
 .login{
     height: 80px;
@@ -80,7 +76,7 @@ h1{
     line-height: 50px;
     outline: none;
     font-size: 18px;
-    letter-spacing: .025em;
+    letter-spacing: 0.25em;
     text-decoration: none;
     cursor: pointer;
     font-weight: 800;
@@ -90,7 +86,7 @@ h1{
     box-shadow: 0 5px 10px rgba(0,0,0,.15);
     transition: all .3s ease;
 }
-.text_ field.input{
+.text_field input{
     color: var(--secondary);
     font-size: 16px;
     font-weight: 500;
@@ -107,7 +103,10 @@ h1{
     margin-top: 8px;
 }
 .my_form_button:hover{
-    background-color: var(--primary);
+    background-color: var(--primary-hover);
+}
+.text_field{
+    position: relative;
 }
 .text_field img{
     position: absolute;
@@ -121,14 +120,13 @@ h1{
 .text_field input:focus{
     border: 1px solid var(--primary);
 }
-.text_field label {
+.text_field label{
     color: var(--secondary);
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: .03rem;
+    letter-spacing: 0.3rem;
     z-index: 10;
 }
-
 .my_form_actions{
     display: flex;
     flex-direction: column;
@@ -141,22 +139,22 @@ h1{
     font-weight: 600;
 }
 .my_form_actions a:hover{
-    color: var(--aura);
+    color: #A7A2CB;
 }
 .my_form_row{
     display: flex;
     justify-content: center;
 }
-.my_form_singup{
+.my_form_signup{
     display: flex;
     justify-content: center;
 }
-.my_form_singup a{
+.my_form_signup a{
     color: var(--primary);
     font-weight: 800;
     text-decoration: none;
     font-size: 18px;
 }
-.my_form_singup a:hover{
+.my_form_signup a:hover{
     color: var(--primary-hover);
 }
